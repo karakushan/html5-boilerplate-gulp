@@ -2,3 +2,12 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 # Useful .gitignore templates: https://github.com/github/gitignore
 /node_modules/
+.idea
+css/*
+fonts/*
+img/*
+js/*
+!/js/vendor/
+!/js/plugins.js
+/src/img/*
+/src/img/icons/*

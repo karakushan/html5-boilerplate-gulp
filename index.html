@@ -11,24 +11,518 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/fonts/Montserrat/stylesheet.css">
+  <link rel="stylesheet" href="/fonts/Museo/stylesheet.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/sprite.css">
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="/bower_components/air-datepicker/dist/css/datepicker.min.css">
+  <link rel="stylesheet" href="/css/main.css">
 
-  <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#008ca5">
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+  your browser</a> to improve your experience and security.</p>
+<![endif]-->
 
-  <!-- Add your site or application content here -->
-  <p></p>
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<!--CONTENT-->
+<header class="site-header">
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <a href="/">
+            <img src="/img/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="col-lg-10">
+          <div class="header-action">
+            <nav class="main-nav">
+              <ul>
+                <li><a href="#">Лучшее </a></li>
+                <li><a href="#">Афиша </a></li>
+                <li><a href="#">Театры </a></li>
+                <li><a href="#">Фестивали </a></li>
+                <li><a href="#">Блог </a></li>
+                <li><a href="#">О нас</a></li>
+              </ul>
+            </nav>
+            <div class="social-icons">
+              <a href="#"><i class="icon icon-facebook"></i></a>
+              <a href="#"><i class="icon icon-instagram"></i></a>
+            </div>
+            <form action="" class="search-form">
+              <input type="search" placeholder="Поиск">
+              <button type="submit"><i class="icon icon-search"></i></button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-main">
+
+    <div class="container">
+
+      <div class="hero-parallax">
+        <ul class="hero-parallax-scene scene unselectable" id="scene">
+          <li data-depth=".05" class="layer"><img src="/img/hb-1.png" alt=""></li>
+          <li data-depth=".1" class="layer"><img src="/img/hb-2.png" alt=""></li>
+          <li data-depth=".2" class="layer"><img src="/img/hb-3.png" alt=""></li>
+          <li data-depth=".3" class="layer"><img src="/img/hb-4.png" alt=""></li>
+          <li data-depth=".4" class="layer"><img src="/img/hb-5.png" alt=""></li>
+          <li data-depth=".5" class="layer"><img src="/img/hb-6.png" alt=""></li>
+          <li data-depth=".6" class="layer"><img src="/img/hb-7.png" alt=""></li>
+          <li data-depth=".7" class="layer"><img src="/img/hb-8.png" alt=""></li>
+        </ul>
+
+        <h1>Ваш гид <br>
+          по спектаклям <br>
+          для детей и подростков <br>
+          в Москве</h1>
+        <div class="btn_wrapper">
+          <a href="#" class="btn">Подобрать спектакль</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="section section-padding section-spectacles">
+    <div class="container">
+      <div class="section-title">Куда сходить с ребёнком</div>
+      <div class="section-subtitle">Выбор редакции</div>
+      <div class="spectacle-list">
+        <div class="spectacle-list__filters">
+          <ul class="left">
+            <li><a href="#">Драматический театр (5)</a></li>
+            <li><a href="#">Театр кукол (9)</a></li>
+            <li><a href="#" class="active">
+              <button><i class="icon icon-close"></i></button>
+              Музыкальный театр (12)</a></li>
+          </ul>
+          <ul class="right">
+            <li><a href="#">0+</a></li>
+            <li><a href="#" class="active">
+              <button><i class="icon icon-close"></i></button>
+              6+</a></li>
+            <li><a href="#">12+</a></li>
+          </ul>
+        </div>
+        <div class="spectacle-list__items slick-slider" data-slick='{"rows":2,"slidesPerRow":4}'>
+          <div class="col-lg-4">
+            <div class="spectacle-list__item">
+              <figure>
+                <a href="">
+                  <span class="badges">
+                    <span>20 ноября</span>
+                    <span>0+</span>
+                  </span>
+                  <img src="/img/spectacle-1.png" alt="">
+                </a>
+              </figure>
+              <a href="" class="spectacle-list__item-name">Денискины рассказы</a>
+              <p>РАМТ</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="spectacle-list__item">
+              <figure>
+                <a href="">
+                  <span class="badges">
+                    <span>20 ноября</span>
+                    <span>0+</span>
+                  </span>
+
+                  <img src="/img/spectacle-2.png" alt="">
+                </a>
+              </figure>
+              <a href="" class="spectacle-list__item-name">Петр и Феврония Муромские</a>
+              <p>Театр «Практика»</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="spectacle-list__item">
+              <figure>
+                <a href="">
+                  <span class="badges">
+                    <span>20 ноября</span>
+                    <span>0+</span>
+                  </span>
+                  <img src="/img/spectacle-3.png" alt="">
+                </a>
+              </figure>
+              <a href="" class="spectacle-list__item-name">Денискины рассказы</a>
+              <p>РАМТ</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="spectacle-list__item">
+              <figure>
+                <a href="">
+                  <span class="badges">
+                    <span>20 ноября</span>
+                    <span>0+</span>
+                  </span>
+                  <img src="/img/spectacle-4.png" alt="">
+                </a>
+              </figure>
+              <a href="" class="spectacle-list__item-name">Петр и Феврония Муромские</a>
+              <p>Театр «Практика»</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="spectacle-list__item">
+              <figure>
+                <a href="">
+                  <span class="badges">
+                    <span>20 ноября</span>
+                    <span>0+</span>
+                  </span>
+                  <img src="/img/spectacle-5.png" alt="">
+                </a>
+              </figure>
+              <a href="" class="spectacle-list__item-name">Денискины рассказы</a>
+              <p>РАМТ</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="spectacle-list__item">
+              <figure>
+                <a href="">
+                  <span class="badges">
+                    <span>20 ноября</span>
+                    <span>0+</span>
+                  </span>
+                  <img src="/img/spectacle-6.png" alt="">
+                </a>
+              </figure>
+              <a href="" class="spectacle-list__item-name">Петр и Феврония Муромские</a>
+              <p>Театр «Практика»</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="spectacle-list__item">
+              <figure>
+                <a href="">
+                   <span class="badges">
+                    <span>20 ноября</span>
+                    <span>0+</span>
+                  </span>
+                  <img src="/img/spectacle-7.png" alt="">
+                </a>
+              </figure>
+              <a href="" class="spectacle-list__item-name">Денискины рассказы</a>
+              <p>РАМТ</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="spectacle-list__item">
+              <figure>
+                <a href="">
+                   <span class="badges">
+                    <span>20 ноября</span>
+                    <span>0+</span>
+                  </span>
+                  <img src="/img/spectacle-8.png" alt="">
+                </a>
+              </figure>
+              <a href="" class="spectacle-list__item-name">Петр и Феврония Муромские</a>
+              <p>Театр «Практика»</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="spectacle-list__item">
+              <figure>
+                <a href="">
+                   <span class="badges">
+                    <span>20 ноября</span>
+                    <span>0+</span>
+                  </span>
+                  <img src="/img/spectacle-1.png" alt="">
+                </a>
+              </figure>
+              <a href="" class="spectacle-list__item-name">Денискины рассказы</a>
+              <p>РАМТ</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="spectacle-list__item">
+              <figure>
+                <a href="">
+                   <span class="badges">
+                    <span>20 ноября</span>
+                    <span>0+</span>
+                  </span>
+                  <img src="/img/spectacle-2.png" alt="">
+                </a>
+              </figure>
+              <a href="" class="spectacle-list__item-name">Петр и Феврония Муромские</a>
+              <p>Театр «Практика»</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="section-bts">
+        <a href="#" class="bts bts-gradient">Все спектакли <i class="icon icon-arrow-right-white"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-padding section-recommendation pt-0">
+    <div class="container">
+      <div class="section-title">Мы рекомендуем: рецензии и обзоры</div>
+      <div class="slick-slider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+        <div>
+          <div class="recommendation-item">
+            <figure>
+              <a href="#"><img src="img/rec-1.png" alt=""></a>
+            </figure>
+            <div class="recommendation-item__author">
+              Светлана Бердичевская / Ноя 05, 2019
+            </div>
+            <a href="#" class="h3 recommendation-item__name">Театральное чтиво: две премьеры осени
+              о книгах для детей и подростков</a>
+            <p>В октябре сразу два театра выпустили премьеры, так или иначе посвященные чтению и книгам. Театр «Снарк»
+              поставил «Дада сказки» по детским рассказам Эжена Ионеско, а Студия сторителлинга — спектакль «Вместо
+              прочтения сжечь». Получилось очень любопытно! </p>
+          </div>
+        </div>
+        <div>
+          <div class="recommendation-item">
+            <figure>
+              <a href="#"><img src="img/rec-2.png" alt=""></a>
+            </figure>
+            <div class="recommendation-item__author">
+              Светлана Бердичевская / Ноя 05, 2019
+            </div>
+            <a href="#" class="h3 recommendation-item__name">Призраки атакуют!</a>
+            <p>В октябре сразу два театра выпустили премьеры, так или иначе посвященные чтению и книгам. Театр «Снарк»
+              поставил «Дада сказки» по детским рассказам Эжена Ионеско, а Студия сторителлинга — спектакль «Вместо
+              прочтения сжечь». Получилось очень любопытно! </p>
+          </div>
+        </div>
+        <div>
+          <div class="recommendation-item">
+            <figure>
+              <a href="#"><img src="img/rec-3.png" alt=""></a>
+            </figure>
+            <div class="recommendation-item__author">
+              Светлана Бердичевская / Ноя 05, 2019
+            </div>
+            <a href="#" class="h3 recommendation-item__name">Прошло ли время Робин Гудов?</a>
+            <p>В октябре сразу два театра выпустили премьеры, так или иначе посвященные чтению и книгам. Театр «Снарк»
+              поставил «Дада сказки» по детским рассказам Эжена Ионеско, а Студия сторителлинга — спектакль «Вместо
+              прочтения сжечь». Получилось очень любопытно! </p>
+          </div>
+        </div>
+        <div>
+          <div class="recommendation-item">
+            <figure>
+              <a href=""><img src="img/rec-1.png" alt=""></a>
+            </figure>
+            <div class="recommendation-item__author">
+              Светлана Бердичевская / Ноя 05, 2019
+            </div>
+            <a href="#" class="h3 recommendation-item__name">Театральное чтиво: две премьеры осени
+              о книгах для детей и подростков</a>
+            <p>В октябре сразу два театра выпустили премьеры, так или иначе посвященные чтению и книгам. Театр «Снарк»
+              поставил «Дада сказки» по детским рассказам Эжена Ионеско, а Студия сторителлинга — спектакль «Вместо
+              прочтения сжечь». Получилось очень любопытно! </p>
+          </div>
+        </div>
+        <div>
+          <div class="recommendation-item">
+            <figure>
+              <a href="#"><img src="img/rec-2.png" alt=""></a>
+            </figure>
+            <div class="recommendation-item__author">
+              Светлана Бердичевская / Ноя 05, 2019
+            </div>
+            <a href="#" class="h3 recommendation-item__name">Призраки атакуют!</a>
+            <p>В октябре сразу два театра выпустили премьеры, так или иначе посвященные чтению и книгам. Театр «Снарк»
+              поставил «Дада сказки» по детским рассказам Эжена Ионеско, а Студия сторителлинга — спектакль «Вместо
+              прочтения сжечь». Получилось очень любопытно! </p>
+          </div>
+        </div>
+        <div>
+          <div class="recommendation-item">
+            <figure>
+              <a href=""><img src="img/rec-3.png" alt=""></a>
+            </figure>
+            <div class="recommendation-item__author">
+              Светлана Бердичевская / Ноя 05, 2019
+            </div>
+            <a href="#" class="h3 recommendation-item__name">Прошло ли время Робин Гудов?</a>
+            <p>В октябре сразу два театра выпустили премьеры, так или иначе посвященные чтению и книгам. Театр «Снарк»
+              поставил «Дада сказки» по детским рассказам Эжена Ионеско, а Студия сторителлинга — спектакль «Вместо
+              прочтения сжечь». Получилось очень любопытно! </p>
+          </div>
+        </div>
+      </div>
+      <div class="section-bts">
+        <a href="#" class="bts bts-gradient">Наш блог <i class="icon icon-arrow-right-white"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-events">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="section-title text-left">Афиша</div>
+          <div class="section-subtitle text-left">Предстоящие постановки</div>
+          <div class="datepicker-here"></div>
+        </div>
+        <div class="col-lg-9">
+          <div class="events-list">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="events-list__item">
+                  <a href="#" class="events-list__title">Петр и Фаврония Муромские (12+)</a>
+                  <p>5 ноября (ВТ) в 19:00</p>
+                  <p>Театр «Практика»</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="events-list__item">
+                  <a href="#" class="events-list__title">Петр и Фаврония Муромские (12+)</a>
+                  <p>5 ноября (ВТ) в 19:00</p>
+                  <p>Театр «Практика»</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="events-list__item">
+                  <a href="#" class="events-list__title">Петр и Фаврония Муромские (12+)</a>
+                  <p>5 ноября (ВТ) в 19:00</p>
+                  <p>Театр «Практика»</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="events-list__item">
+                  <a href="#" class="events-list__title">Петр и Фаврония Муромские (12+)</a>
+                  <p>5 ноября (ВТ) в 19:00</p>
+                  <p>Театр «Практика»</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="events-list__item">
+                  <a href="#" class="events-list__title">Петр и Фаврония Муромские (12+)</a>
+                  <p>5 ноября (ВТ) в 19:00</p>
+                  <p>Театр «Практика»</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="events-list__item">
+                  <a href="#" class="events-list__title">Петр и Фаврония Муромские (12+)</a>
+                  <p>5 ноября (ВТ) в 19:00</p>
+                  <p>Театр «Практика»</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="events-list__item">
+                  <a href="#" class="events-list__title">Петр и Фаврония Муромские (12+)</a>
+                  <p>5 ноября (ВТ) в 19:00</p>
+                  <p>Театр «Практика»</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="events-list__item">
+                  <a href="#" class="events-list__title">Петр и Фаврония Муромские (12+)</a>
+                  <p>5 ноября (ВТ) в 19:00</p>
+                  <p>Театр «Практика»</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-bts">
+        <a href="#" class="bts bts-gradient">Вся афиша <i class="icon icon-arrow-right-white"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="/img/subscribe-fb.png" alt="">
+        </div>
+        <div class="col-lg-6">
+          <img src="/img/subscribe-insta.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2">
+        <a href="/"><img src="/img/logo-footer.png" alt=""></a>
+      </div>
+      <div class="col-lg-5">
+        <div class="footer-widget">
+          <div class="footer-widget__title">Меню</div>
+          <ul>
+            <li><a href="#">Лучшее</a></li>
+            <li><a href="#">Афиша</a></li>
+            <li><a href="#">Театры</a></li>
+            <li><a href="#">Фестивали</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">О нас</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="footer-widget">
+          <div class="footer-widget__title">Наш блог</div>
+          <ul>
+            <li><a href="#">Рецензии</a></li>
+            <li><a href="#">Обзоры</a></li>
+            <li><a href="#">Интервью</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="footer-widget">
+          <div class="footer-widget__social">
+            <a href="#" class="icon icon-facebook"></a>
+            <a href="#" class="icon icon-instagram"></a> <br>
+            <a href="mailto:kids@teatr-live.ru">kids@teatr-live.ru</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="copywrite">
+      <div> Использование материалов сайта разрешено только при наличии активной ссылки на источник. <br>
+        Театр - детям! 2019 © Все права защищены
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!--JS-->
+<script src="/js/vendor/modernizr-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="/js/plugins.js"></script>
+<script src="/bower_components/slick-carousel/slick/slick.min.js"></script>
+<script src="/bower_components/air-datepicker/dist/js/datepicker.min.js"></script>
+<script src="/bower_components/parallax/deploy/parallax.js"></script>
+<!--<script src="/bower_components/parallax/deploy/jquery.parallax.min.js"></script>-->
+<script src="/js/main.js"></script>
 
 </body>
 

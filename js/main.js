@@ -1,1 +1,1 @@
-$(document).ready(function(){});
+$(document).ready(function(){$(".slick-slider").slick({nextArrow:'<button type="button" class="slick-next"><i class="icon icon-arrow-right"></i></button>',prevArrow:'<button type="button" class="slick-prev"><i class="icon icon-arrow-left"></i></button>'});var e=$(".datepicker-here").datepicker({inline:!0,range:!0,multipleDates:!0,onSelect:function(e,t,n){}}).data("datepicker"),t=new Date;t.setDate(t.getDate());var n=new Date;n.setDate(n.getDate()+7),e.selectDate([t,n]),new Parallax(document.getElementById("scene"))});

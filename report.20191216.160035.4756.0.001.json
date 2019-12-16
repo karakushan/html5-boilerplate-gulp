@@ -1,0 +1,399 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191216.160035.4756.0.001.json",
+    "dumpEventTime": "2019-12-16T16:00:35Z",
+    "dumpEventTimeStamp": "1576504835515",
+    "processId": 4756,
+    "cwd": "E:\\OSPanel\\domains\\kids-teatr.loc",
+    "commandLine": [
+      "node",
+      "E:\\OSPanel\\domains\\kids-teatr.loc\\node_modules\\.bin\\\\..\\gulp\\bin\\gulp.js"
+    ],
+    "nodejsVersion": "v12.13.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.13.0",
+      "v8": "7.7.299.13-node.12",
+      "uv": "1.32.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.13.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17763",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Pentium(R) CPU G4560 @ 3.50GHz",
+        "speed": 3504,
+        "user": 8312578,
+        "nice": 0,
+        "sys": 4756609,
+        "idle": 57596593,
+        "irq": 546125
+      },
+      {
+        "model": "Intel(R) Pentium(R) CPU G4560 @ 3.50GHz",
+        "speed": 3504,
+        "user": 8071109,
+        "nice": 0,
+        "sys": 3879375,
+        "idle": 58715093,
+        "irq": 248828
+      },
+      {
+        "model": "Intel(R) Pentium(R) CPU G4560 @ 3.50GHz",
+        "speed": 3504,
+        "user": 8290203,
+        "nice": 0,
+        "sys": 3683265,
+        "idle": 58692109,
+        "irq": 92921
+      },
+      {
+        "model": "Intel(R) Pentium(R) CPU G4560 @ 3.50GHz",
+        "speed": 3504,
+        "user": 9268156,
+        "nice": 0,
+        "sys": 3598531,
+        "idle": 57798890,
+        "irq": 83359
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Беспроводная сеть",
+        "internal": false,
+        "mac": "18:a6:f7:19:00:3a",
+        "address": "fdd4:6e5c:6684:c300:ccdb:eb98:7ada:f4f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Беспроводная сеть",
+        "internal": false,
+        "mac": "18:a6:f7:19:00:3a",
+        "address": "fdd4:6e5c:6684:c300:cd6d:dffa:53ba:7f71",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Беспроводная сеть",
+        "internal": false,
+        "mac": "18:a6:f7:19:00:3a",
+        "address": "fe80::ccdb:eb98:7ada:f4f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 13
+      },
+      {
+        "name": "Беспроводная сеть",
+        "internal": false,
+        "mac": "18:a6:f7:19:00:3a",
+        "address": "192.168.1.6",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "DESKTOP-H8TMJ45"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff6b6ae1389",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff6b6ae57cc",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28348"
+    },
+    {
+      "pc": "0x00007ff6b6ae4778",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24168"
+    },
+    {
+      "pc": "0x00007ff6b6bd332b",
+      "symbol": "v8::base::CPU::has_sse+37723"
+    },
+    {
+      "pc": "0x00007ff6b73d6f4e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff6b73bef91",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff6b728c85c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff6b7297c00",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff6b7294734",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff6b7289fc3",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff6b7288794",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2356"
+    },
+    {
+      "pc": "0x00007ff6b72a9a65",
+      "symbol": "v8::internal::Factory::NewFillerObject+53"
+    },
+    {
+      "pc": "0x00007ff6b7016239",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+4057"
+    },
+    {
+      "pc": "0x00007ff6b7802c6d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+567949"
+    },
+    {
+      "pc": "0x00007ff6b7781fb3",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+40403"
+    },
+    {
+      "pc": "0x0000011b48d42a34",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2152742912,
+    "totalCommittedMemory": 2152742912,
+    "usedMemory": 2143481536,
+    "availableMemory": 50015240,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2097152,
+        "capacity": 1047488,
+        "used": 214008,
+        "available": 833480
+      },
+      "old_space": {
+        "memorySize": 2133176320,
+        "committedMemory": 2133176320,
+        "capacity": 2130113440,
+        "used": 2127281128,
+        "available": 2832312
+      },
+      "code_space": {
+        "memorySize": 1736704,
+        "committedMemory": 1736704,
+        "capacity": 1434400,
+        "used": 1434400,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 2101248,
+        "committedMemory": 2101248,
+        "capacity": 1236160,
+        "used": 1236160,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 13320192,
+        "committedMemory": 13320192,
+        "capacity": 13279896,
+        "used": 13279896,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3648,
+        "used": 3648,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047488,
+        "used": 0,
+        "available": 1047488
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 1038.33,
+    "kernelCpuSeconds": 400.781,
+    "cpuConsumptionPercent": 9.21384,
+    "maxRss": 3230576640,
+    "pageFaults": {
+      "IORequired": 4452609,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 8438,
+      "writes": 245
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "": "C:=C:\\",
+    "": "E:=E:\\OSPanel\\domains\\kids-teatr.loc",
+    "dp0": "E:\\OSPanel\\domains\\kids-teatr.loc\\node_modules\\.bin\\",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "INIT_CWD": "E:\\OSPanel\\domains\\kids-teatr.loc",
+    "PROMPT": "$P$G",
+    "SESSIONNAME": "Console",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "_prog": "node",
+    "__INTELLIJ_COMMAND_HISTFILE__": "C:\\Users\\Vitaliy\\.PhpStorm2019.3\\config\\terminal\\history\\history-696",
+    "SystemDrive": "C:",
+    "NUMBER_OF_PROCESSORS": "4",
+    "LOGONSERVER": "\\\\DESKTOP-H8TMJ45",
+    "TEMP": "C:\\Users\\Vitaliy\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\Vitaliy\\AppData\\Local\\Temp",
+    "HOMEPATH": "\\Users\\Vitaliy",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "IDEA_INITIAL_DIRECTORY": "C:\\WINDOWS\\system32",
+    "ESET_OPTIONS": "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ",
+    "": "::=::\\",
+    "USERNAME": "Vitaliy",
+    "ProgramFiles": "C:\\Program Files",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-H8TMJ45",
+    "LOCALAPPDATA": "C:\\Users\\Vitaliy\\AppData\\Local",
+    "TERMINAL_EMULATOR": "JetBrains-JediTerm",
+    "ProgramData": "C:\\ProgramData",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 9, GenuineIntel",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "APPDATA": "C:\\Users\\Vitaliy\\AppData\\Roaming",
+    "HOMEDRIVE": "C:",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "USERDOMAIN": "DESKTOP-H8TMJ45",
+    "PROCESSOR_LEVEL": "6",
+    "ChocolateyLastPathUpdate": "132182126986340228",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "SystemRoot": "C:\\WINDOWS",
+    "PhpStorm": "C:\\Program Files\\JetBrains\\PhpStorm 2018.3.5\\bin;",
+    "PROCESSOR_REVISION": "9e09",
+    "OneDrive": "C:\\Users\\Vitaliy\\OneDrive",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PATH": "E:\\OSPanel\\domains\\kids-teatr.loc\\node_modules\\.bin;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Users\\Vitaliy\\AppData\\Local\\Android\\Sdk;E:\\OSPanel\\modules\\database\\MySQL-5.7-x64\\bin;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\AOMEI Backupper;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\composer;C:\\Program Files\\PuTTY\\;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\AOMEI Backupper;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;E:\\OSPanel\\modules\\php\\PHP_7.3-x64;C:\\Users\\Vitaliy\\AppData\\Local\\Microsoft\\WindowsApps;c:\\wp-cli;C:\\Users\\Vitaliy\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Vitaliy\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Vitaliy\\AppData\\Roaming\\npm",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "USERPROFILE": "C:\\Users\\Vitaliy",
+    "windir": "C:\\WINDOWS",
+    "ProgramW6432": "C:\\Program Files",
+    "OS": "Windows_NT",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "PUBLIC": "C:\\Users\\Public",
+    "COMPUTERNAME": "DESKTOP-H8TMJ45",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "\\\\?\\E:\\OSPanel\\domains\\kids-teatr.loc\\node_modules\\node-sass\\vendor\\win32-x64-72\\binding.node",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll"
+  ]
+}
